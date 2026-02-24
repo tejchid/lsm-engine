@@ -1,7 +1,5 @@
 # High-Performance LSM Storage Engine
 
-A specialized Log-Structured Merge-tree storage engine built to explore the limits of write-through performance on modern Linux systems. This isn't a general-purpose DB; it's a deep dive into lock-free concurrency and kernel-bypass I/O.
-
 ## Why I built this
 Standard database implementations often bottle-neck on disk I/O and mutex contention in the Memtable. I wanted to see how much performance I could reclaim by:
 1. Moving away from standard POSIX blocking writes.
